@@ -1,0 +1,23 @@
+# --- Level 2 ---
+# Ground top y=728. All positions are resting positions.
+
+MAGAZINE BOOST NORMAL BOOST NORMAL NORMAL
+
+# Ground targets (center y = 728 - 15 = 713)
+TARGET 650 713 15 10
+TARGET 750 713 15 10
+TARGET 850 713 15 10
+
+# Three columns (h=100): center y = 728 - 50 = 678
+ICE   600 678  20 100
+ICE   700 678  20 100
+WOOD  800 678  20 100
+
+# Roof (h=20) on top of columns (column tops at 628): center y = 628 - 10 = 618
+STONE 700 618 220  20
+
+# Upper column (h=50) on roof (roof top at 608): center y = 608 - 25 = 583
+ICE   700 583  20  50
+
+# Elevated target on upper column (column top at 558): center y = 558 - 15 = 543
+TARGET 700 543 15 10

@@ -1,0 +1,20 @@
+# --- Level 1 ---
+# Ground top surface is at y = (HEIGHT-20) - 20 = 728px
+# Objects placed at their exact resting positions to avoid spawn-impact damage.
+
+# Camera and boundary settings
+# BOUNDS minX minY maxX maxY  (all values in pixels, Y grows downward)
+BOUNDS 0 -300 1800 1050
+
+MAGAZINE NORMAL NORMAL BOOST NORMAL
+
+# Targets  (X  Y    R  Health)
+TARGET 600 713 15 10
+TARGET 700 713 15 10
+
+# Blocks   (X   Y    W    H)
+# Pillars: bottom at 728, half-h=50, so center y = 678
+WOOD  550 678  20 100
+WOOD  650 678  20 100
+# Roof: sits on pillar tops (628), half-h=10, so center y = 618
+STONE 600 618 140  20

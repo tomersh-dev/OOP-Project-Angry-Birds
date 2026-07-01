@@ -1,0 +1,2 @@
+﻿file(COPY "assets" DESTINATION "${CMAKE_BINARY_DIR}")
+file(COPY "levels" DESTINATION "${CMAKE_BINARY_DIR}")
