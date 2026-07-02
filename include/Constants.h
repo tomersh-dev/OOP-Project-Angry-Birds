@@ -53,8 +53,6 @@ namespace Projectile_Settings {
 }
 
 namespace Gameplay {
-    inline constexpr float TRANSITION_DELAY        = 3.0f;
-
     // Out-of-bounds limits (tighter than the level width)
     inline constexpr float OOB_RIGHT               = 2500.0f;
     inline constexpr float OOB_LEFT                = -50.0f;
@@ -158,16 +156,3 @@ namespace FloatingText_Settings {
     inline constexpr float        VELOCITY_Y = -80.0f; // pixels per second (upward)
 }
 
-namespace Default_Materials {
-    inline constexpr float BIRD_DENSITY = 1.0f;
-    inline constexpr float BIRD_FRICTION = 0.3f;
-    inline constexpr float BIRD_RESTITUTION = 0.4f;
-
-    inline constexpr float BLOCK_DENSITY = 1.0f;
-    inline constexpr float BLOCK_FRICTION = 0.5f;
-    inline constexpr float BLOCK_RESTITUTION = 0.1f;
-
-    inline constexpr float TARGET_DENSITY = 1.0f;
-    inline constexpr float TARGET_FRICTION = 0.4f;
-    inline constexpr float TARGET_RESTITUTION = 0.2f;
-}

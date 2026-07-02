@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Rename-Item \"C:\\\\Users\\\\f16it\\\\Desktop\\\\OOP-Project Claude\\\\resources\\\\assets\\\\red_projectile.png\" \"normal_projectile.png\")"
+    ]
+  }
+}

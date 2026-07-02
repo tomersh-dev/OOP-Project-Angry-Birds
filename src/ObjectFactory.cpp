@@ -22,7 +22,7 @@ Projectile* ObjectFactory::CreateProjectile(const std::string& typeStr, float x,
     AssetManager& assets = AssetManager::GetInstance();
 
     if (typeStr == "BOOST")
-        return new BoostProjectile (&world, x, y, radius, assets.GetTexture("boost_bird"));
+        return new BoostProjectile (&world, x, y, radius, assets.GetTexture("boost_projectile"));
 
-    return     new NormalProjectile(&world, x, y, radius, assets.GetTexture("red_bird"));
+    return     new NormalProjectile(&world, x, y, radius, assets.GetTexture("normal_projectile"));
 }

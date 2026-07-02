@@ -14,8 +14,6 @@ public:
     Projectile* GetFiredProjectile() const;
     void ClearFiredProjectile();
 
-    bool HasActiveProjectile() const;
-
 private:
     void Fire();
 

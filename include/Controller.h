@@ -76,8 +76,7 @@ private:
     bool  projectileFired     = false;
     bool  isWin               = false;
 
-    GameState gameState     = GameState::MainMenu;
-    float transitionTimer   = 0.0f;
+    GameState gameState = GameState::MainMenu;
 
     // Main menu & instructions
     std::unique_ptr<Button> btnStart;

@@ -124,7 +124,3 @@ Projectile* Slingshot::GetFiredProjectile() const {
 void Slingshot::ClearFiredProjectile() {
     firedProjectile = nullptr;
 }
-
-bool Slingshot::HasActiveProjectile() const {
-    return currentProjectile != nullptr;
-}

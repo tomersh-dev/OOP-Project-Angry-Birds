@@ -16,9 +16,9 @@ Target::Target(b2World* world, float x, float y, float radius, float maxHealth, 
 
     b2FixtureDef fixtureDef;
     fixtureDef.shape       = &shape;
-    fixtureDef.density     = Default_Materials::TARGET_DENSITY;
-    fixtureDef.friction    = Default_Materials::TARGET_FRICTION;
-    fixtureDef.restitution = Default_Materials::TARGET_RESTITUTION;
+    fixtureDef.density     = Target_Settings::DENSITY;
+    fixtureDef.friction    = Target_Settings::FRICTION;
+    fixtureDef.restitution = Target_Settings::RESTITUTION;
     fixtureDef.filter.categoryBits = CollisionFilter::TARGET;
     fixtureDef.filter.maskBits     = CollisionFilter::ALL;
     body->CreateFixture(&fixtureDef);

@@ -39,7 +39,7 @@ void Controller::InitAssets() {
     AssetManager& assets = AssetManager::GetInstance();
     assets.LoadTexture("wood",      "assets/wood.png");
     assets.LoadTexture("pig",       "assets/pig.png");
-    assets.LoadTexture("red_bird",  "assets/red_bird.png");
+    assets.LoadTexture("normal_projectile",  "assets/normal_projectile.png");
     assets.LoadTexture("slingshot", "assets/slingshot.png");
 
     auto tryLoad = [&](const std::string& name, const std::string& file, const std::string& fallback) {
@@ -47,9 +47,9 @@ void Controller::InitAssets() {
         catch (...) { assets.LoadTexture(name, fallback); }
     };
 
-    tryLoad("ice",        "assets/ice.png",        "assets/wood.png");
-    tryLoad("stone",      "assets/stone.png",      "assets/wood.png");
-    tryLoad("boost_bird", "assets/boost_bird.png", "assets/red_bird.png");
+    tryLoad("ice",              "assets/ice.png",             "assets/wood.png");
+    tryLoad("stone",            "assets/stone.png",           "assets/wood.png");
+    tryLoad("boost_projectile", "assets/boost_projectile.png", "assets/normal_projectile.png");
 
     hudFontLoaded = hudFont.openFromFile("assets/font.ttf");
 }
@@ -580,7 +580,7 @@ void Controller::RenderHUD() {
         const std::string typeStr = tempQueue.front();
         tempQueue.pop();
 
-        const std::string texName = (typeStr == "BOOST") ? "boost_bird" : "red_bird";
+        const std::string texName = (typeStr == "BOOST") ? "boost_projectile" : "normal_projectile";
         sf::Sprite hudSprite(assets.GetTexture(texName));
         sf::Vector2u texSize = assets.GetTexture(texName).getSize();
         float scale = HUD::MAGAZINE_SPRITE_SIZE / static_cast<float>(texSize.x);
